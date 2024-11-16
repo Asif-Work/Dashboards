@@ -45,11 +45,14 @@ Visualization Blueprint:
 - Step 9 : Make 2 background layouts in the MS PowerPoint.
 
 Layout & Design Workflow:
-- Step 10 : Make new measure using DAX: "Latest Month Wait List = CALCULATE(SUM(All_data[Total]), All_data[Archive Date]=max(All_data[Archive Date]))"
-- Step 11 : DAX: "Previous Year Wait List = CALCULATE(SUM(All_data[Total]),All_data[Archive Date]= EDATE(MAX(All_data[Archive Date]), -12))"
+- Step 10 : Make new measure using DAX:
+  ![image](https://github.com/user-attachments/assets/e15e5673-114d-4818-86d0-e036d158b836)
+
+- Step 11 : DAX: ![image](https://github.com/user-attachments/assets/fca5293e-cde0-48e7-b078-02826613f432)
+
 - Step 12 : Make a dummy table named CM with column: Average, Median.
 - Step 13 : Using slicer make two buttons for Average and Median.
-- Step 14 : Make the buttons functioning with anew measure containing DAX: "Avg/Median toggle = SWITCH(VALUES('CM'[Calculation_Methods]),"Average",[Average total list],"Median",[Median total])"
+- Step 14 : Make the buttons functioning with anew measure containing DAX:![image](https://github.com/user-attachments/assets/ce7aa227-3738-4c57-aade-9521580fddf9)
 - Step 15 : Link a donut chart with Avg/Median toggle.
 - Step 16 : Put bar chart containing Time Bands as X axis, Avg/Median toggle as Y axis, and age_profile as legends.
 - Step 17 : Transform the data once more to remove the duplicates and blank values from the age_profile column.
